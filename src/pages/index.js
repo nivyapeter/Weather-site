@@ -3,7 +3,7 @@ import React from "react";
 function index() {
   return (
     <div>
-      <h1>weather site</h1>
+      <h1>weather site-sample</h1>
     </div>
   );
 }
