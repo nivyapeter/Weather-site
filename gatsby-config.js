@@ -3,5 +3,8 @@ module.exports = {
     title: `Weather-site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-postcss',
+    // ...
+  ],
 }
