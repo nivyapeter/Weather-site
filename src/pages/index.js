@@ -10,7 +10,6 @@ function index() {
       <Header />
       <NavBar />
       <MainBody />
-      <Footer />
     </div>
   );
 }
