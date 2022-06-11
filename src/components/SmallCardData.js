@@ -1,5 +1,4 @@
 import React from "react";
-// import { cardDataItems } from "../constants";
 
 function SmallCardData({cardDataItems,className,title}) {
   console.log(cardDataItems);
@@ -8,12 +7,19 @@ function SmallCardData({cardDataItems,className,title}) {
       {cardDataItems?.map((cardDataItem) => {
         return (
           <div>
+          <div>
           
            <div>
+             <div className="relative">
               <img
                 className="rounded-lg"
                 src={cardDataItem.image}
               />
+             
+              <div className="absolute top-[43%] left-[50%] right-[50%] text-white text-xl">
+             <span>{cardDataItem.icon}</span>
+              </div>
+              </div>
             </div>
             <div className="mt-2 mb-4">
               <p class="text-black text-[14px] cursor-pointer hover:text-blue-500">
@@ -21,7 +27,7 @@ function SmallCardData({cardDataItems,className,title}) {
               </p>
             </div>
             </div>
-
+</div>
       )})}
     </div>
   );

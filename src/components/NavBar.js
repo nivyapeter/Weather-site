@@ -5,7 +5,7 @@ function NavBar() {
   console.log(navItems);
   return (
     <div className="bg-[#003550] hidden md:block">
-      <div className="max-w-6xl m-auto  flex flex-row justify-between text-white items-center ">
+      <div className="max-w-6xl 2xl:max-w-[88rem] m-auto  flex flex-row justify-between text-white items-center ">
         {navItems?.map((navitem) => {
           return (
             <div

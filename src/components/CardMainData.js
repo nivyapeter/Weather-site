@@ -1,8 +1,8 @@
 import React from "react";
 
-function CardMainData({title,subTitle,smallTitle,sideText,img}) {
+function CardMainData({title,subTitle,smallTitle,sideText,img,className}) {
   return (
-    <div class="rounded-lg   max-w-2xl p-3">
+    <div className={` ${className} rounded-lg  p-3`}>
       <h2 className="text-black text-xl font-bold">{title}</h2>
         <img
           className="rounded-lg"

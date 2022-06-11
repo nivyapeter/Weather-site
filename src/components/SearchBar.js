@@ -1,5 +1,6 @@
 import React from "react";
 import { VscSearch } from "react-icons/vsc";
+import { BsCloudSun } from "react-icons/bs";
 
 function SearchBar() {
   return (
@@ -13,6 +14,21 @@ function SearchBar() {
           />
           <div className="text-white  font-bold pr-2 ">
             <VscSearch />
+          </div>
+        </div>
+      </div>
+      <div className="md:bg-white rounded-lg lg:group-hover:block hidden absolute w-[26%] mt-1 ">
+        <div className="border-b-2 p-3">
+          <span>Recents</span>
+        </div>
+        <div className="flex flex-row items-center cursor-pointer hover:bg-blue-700">
+          <BsCloudSun className="text-yellow-600 w-[30px] h-[30px] ml-6" />
+          <div className="p-2 ">
+            <span>26°</span>
+          </div>
+          <div className="p-4 flex flex-col items-center text-xs">
+            <p>Wayanadu</p>
+            <span>Kerala</span>
           </div>
         </div>
       </div>
