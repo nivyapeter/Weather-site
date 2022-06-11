@@ -8,6 +8,10 @@ import card4Img from "./images/card4.webp";
 import card5Img from "./images/card5.webp";
 import card6Img from "./images/card6.webp";
 import card7Img from "./images/card7.webp";
+import card8Img from "./images/card8.webp";
+import card9Img from "./images/card9.webp";
+import card10Img from "./images/card10.webp";
+import card11Img from "./images/card11.webp";
  
 const navItems = [{ name: "Today" }, { name: "Hourly" },{ name: "10 Day" },{ name: "Weekend" },{ name: "Monthly" },{ name: "Radar" },{ name: "Video","icon": <CgPlayButtonO />},{ name: "More Forcats","icon":<BiDownArrow />,reverse:true }];
 const cardDataItems = [{
@@ -42,5 +46,23 @@ const secondCardDataItems = [{
 },
 ]
 
+const thirdCardDataItems = [{
+    title:"Very Heavy Rains to Batter Assam, Meghalaya, Arunachal This Week",
+    image:card8Img
+},
+{
+   title:"When Will Monsoon Arrive Over Goa?",
+   image:card9Img
+},
+{
+   title:"IMD’s Updated Forecast Predicts An Even Wetter Monsoon 2022",
+   image:card10Img
+},
+{
+    title:"Monsoon Rains To Be Normal Across India, High Over NW States",
+    image:card11Img
+},
+]
 
- export {navItems,cardDataItems,secondCardDataItems}
+
+ export {navItems,cardDataItems,secondCardDataItems,thirdCardDataItems}

@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <div className="bg-[#005986] w-full ">
-        <div className="px-3 py-2 m-auto md:w-4/6 w-[89%] h-20 flex items-center flex-row justify-between">
+        <div className="px-3 py-2 m-auto 2xl:w-4/6 w-[89%] xl:[90%] h-20 flex items-center flex-row justify-between">
           <div className="flex items-center flex-row cursor-pointer">
             <a to="">
               <div className="w-[60px]">

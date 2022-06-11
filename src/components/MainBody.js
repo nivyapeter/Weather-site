@@ -1,10 +1,11 @@
 import React from "react";
 import CardMainData from "./CardMainData";
 import SmallCardData from "./SmallCardData";
-import { cardDataItems, secondCardDataItems } from "../constants";
+import { cardDataItems, secondCardDataItems,thirdCardDataItems } from "../constants";
 import Button from "./Button";
 import storyImg from "../images/story.png";
 import secondStoryImg from "../images/secondstory.webp";
+import Footer from "./Footer";
 
 function MainBody() {
   return (
@@ -57,9 +58,6 @@ function MainBody() {
               </div>
               <Button text="Sea more" /> 
             </div>
-            {/* <div class="shadow-lg  p-3 mt-6 max-w-[22%]">
-            <SmallCardData cardDataItems={secondCardDataItems} className="flex flex-col"/>
-          </div> */}
           </div>
           <div className="bg-white rounded-lg w-3/5  h-[15%]"></div>
         </div>
@@ -69,7 +67,7 @@ function MainBody() {
            <div class="p-3 mt-6">
                <h2>Don't Miss</h2>
                 <SmallCardData
-                  cardDataItems={secondCardDataItems}
+                  cardDataItems={thirdCardDataItems}
                   className="flex flex-row  justify-between gap-7"
                 />
               </div>
@@ -93,7 +91,7 @@ function MainBody() {
           </div>
           <div className="bg-white rounded-lg w-3/5  h-[15%]"></div>
         </div>
-        
+        <Footer />
       </div>
     </div>
   );
