@@ -18,7 +18,7 @@ import VideoCard from "./VideoCard";
 
 function MainBody() {
   return (
-    <div className=" bg-slate-500 mx-auto w-4/   ">
+    <div className=" bg-[#003550] mx-auto w-4/   ">
       <div class="flex flex-col">
         <div>
           <div className="md:flex-row md:w-5/6 2xl:w-[69%] m-auto py-2 gap-3 w-[93%] hidden md:flex">
@@ -133,7 +133,7 @@ function MainBody() {
           </div>
           <div className="bg-white rounded-lg w-3/5  h-[15%]"></div>
         </div>
-        <VideoCard/>
+        <VideoCard text="Top Video"/>
         <div className="hidden md:block">
           <Footer />
         </div>
