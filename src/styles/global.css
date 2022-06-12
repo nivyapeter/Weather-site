@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 input:focus + .dataBlock {
-    display: block
+    border: 2px solid white;
   }
