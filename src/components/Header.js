@@ -8,7 +8,7 @@ import { BiDownArrow } from "react-icons/bi";
 function Header() {
   return (
     <>
-      <div className="bg-[#005986] w-full fixed md:static z-10">
+      <div className="bg-[#005986]  w-full fixed md:static z-10">
         <div className=" px-3 py-2 m-auto 2xl:w-9/12 w-[89%] xl:w-[98%] h-20 flex items-center flex-row justify-between">
           <div className="flex items-center flex-row cursor-pointer">
             <a to="">
@@ -43,6 +43,10 @@ function Header() {
             </div>
           </div>
           <SearchBar />
+          {/* <div id="parent" class="h-[300px] w-[300px] bg-red-700 flex justify-center items-center hover:bg-blue-100 pointer-events-none">
+  <div id="child" class="bg-red-200 h-[100px] w-[100px]  flex pointer-events-auto">
+  </div>
+</div> */}
           <div className="flex flex-row items-center justify-between">
             <GiEarthAfricaEurope className="w-[30px] h-[80px] text-white hidden md:block" />
             <div className="border-r-2 px-1 text-white text-[15px]  hidden md:block">

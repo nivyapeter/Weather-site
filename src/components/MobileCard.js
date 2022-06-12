@@ -1,11 +1,11 @@
 import React from 'react'
 import Button from './Button';
 
-function MobileCard({className,mobileCardItems,mobileCardTwoItems}) {
+function MobileCard({text,className,mobileCardItems,mobileCardTwoItems}) {
   return (
     <div>
         <div className={`bg-white w-11/12 m-auto rounded-lg md:hidden block ${className}`}>
-        <h2 className="text-[#2b2b2b] text-xl font-bold p-2">Top Stories</h2>
+        <h2 className="text-[#2b2b2b] text-xl font-bold p-2">{text}</h2>
         <div className="md:grid md:gap-12 flex flex-row gap-1 overflow-auto overflow-y-hidden scrollbar-hide scroll-smooth">
           {mobileCardItems?.map((mobileCardItem)=>{
               return(

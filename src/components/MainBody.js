@@ -15,10 +15,11 @@ import secondStoryImg from "../images/secondstory.webp";
 import Footer from "./Footer";
 import MobileCard from "./MobileCard";
 import VideoCard from "./VideoCard";
+import MobileFooter from "./MobileFooter";
 
 function MainBody() {
   return (
-    <div className=" bg-[#003550] mx-auto w-4/   ">
+    <div className="bg-gradient-to-r from-[#003550] to-blue-200  mx-auto w-4/   ">
       <div class="flex flex-col">
         <div>
           <div className="md:flex-row md:w-5/6 2xl:w-[69%] m-auto py-2 gap-3 w-[93%] hidden md:flex">
@@ -54,7 +55,7 @@ function MainBody() {
           </div>
 
           {/* mobile view */}
-          <MobileCard  mobileCardItems={mobileTopStoryCardDataItems} mobileCardTwoItems={mobileTopStoryCardTwoDataItems} className="mt-28 "/>
+          <MobileCard  text="Top Stories" mobileCardItems={mobileTopStoryCardDataItems} mobileCardTwoItems={mobileTopStoryCardTwoDataItems} className="mt-28 "/>
         </div>
 
         {/* weather section */}
@@ -112,7 +113,7 @@ function MainBody() {
           <div className="bg-white rounded-lg w-3/5 2xl:w-3/4  h-[15%]"></div>
         </div>
         {/*trends mobile view */}
-        <MobileCard mobileCardTwoItems={mobileTopStoryCardTwoDataItems}/>
+        <MobileCard mobileCardTwoItems={mobileTopStoryCardTwoDataItems} text="Trending"/>
 
         {/* video container */}
         <div className="flex-row w-5/6 m-auto py-2 gap-3 hidden md:flex 2xl:w-[69%]">
