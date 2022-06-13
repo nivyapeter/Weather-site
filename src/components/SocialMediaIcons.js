@@ -3,7 +3,7 @@ import React from "react";
 function SocialMediaIcons() {
   return (
     <div>
-      <div className="flex flex-row items-center">
+      <div className="md:flex flex-row items-center hidden ">
         <span>Connect with us</span>
         <div className="flex flex-row">
           <a

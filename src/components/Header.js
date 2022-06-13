@@ -7,13 +7,19 @@ import { GiEarthAfricaEurope, GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiDownArrow } from "react-icons/bi";
 import NavBarWhiteBlock from "./NavBarWhiteBlock";
+import MobileMenu from "./MobileMenu"
 
 function Header() {
   const [state, setState] = useState(false);
+  // const [menu, setMenu] = useState(false);
 
   const displayHamburge = () => {
     setState(true);
   };
+
+  // const displayMenu = () => {
+  //   setMenu(true);
+  // };
   return (
     <>
       <div className="bg-[#005986]  w-full fixed md:static z-10">
@@ -45,7 +51,7 @@ function Header() {
             </div>
             <div className="md:border-l-2 md:px-4 pr-4">
               <img
-                className="md:w-[140px] w-[242px] md:h-[23px]"
+                className="md:w-[140px] w-[354px] md:h-[23px]"
                 src={timesImg}
               ></img>
             </div>
@@ -66,16 +72,14 @@ function Header() {
               </div>
             ) : (
               <div className="px-4 cursor-pointer" onClick={()=>setState(false)}>
-                <AiOutlineClose className="w-[30px] h-[80px] text-white md:border-2  md:border-white h-[31px]" />
+                <AiOutlineClose className="w-[30px]  text-white md:border-2  md:border-white h-[31px]" />
               </div>
             )}
 
-            {/* mobile */}
-
-            
           </div>
         </div>
       </div>
+      {state === true?<MobileMenu /> :null}
       {state === true ? <NavBarWhiteBlock /> : null}
       <div className="h-10 bg-[#337A9E] hidden md:block"></div>
     </>

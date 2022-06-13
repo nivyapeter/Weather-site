@@ -3,7 +3,7 @@ import React from 'react'
 function SideLogo() {
   return (
     <div>
-        <div className="flex flex-row items-center gap-3">
+        <div className="flex flex-row items-center gap-3 my-4 md:my-0">
               <svg
                 class="Icon--icon--3wCKh Footer--iconWeatherCompany--I4AuQ"
                 set="footer"
