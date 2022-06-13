@@ -61,11 +61,11 @@ function Header() {
               <BiDownArrow className="w-[20px] h-[50px] text-white  hidden md:block" />
             </div>
             {state === false ? (
-              <div className="px-4" onClick={displayHamburge}>
+              <div className="px-4  cursor-pointer" onClick={displayHamburge}>
                 <GiHamburgerMenu className="w-[30px] h-[80px] text-white" />
               </div>
             ) : (
-              <div className="px-4" onClick={()=>setState(false)}>
+              <div className="px-4 cursor-pointer" onClick={()=>setState(false)}>
                 <AiOutlineCloseSquare className="w-[30px] h-[80px] text-white" />
               </div>
             )}
