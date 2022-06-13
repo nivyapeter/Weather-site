@@ -1,6 +1,11 @@
 import React from "react";
 import { BiDownArrow } from "react-icons/bi";
 import { CgPlayButtonO } from "react-icons/cg";
+// import { BsCalendarDate } from "react-icons/bs";
+// import { GiRadarSweep } from "react-icons/gi";
+// import { AiFillPlayCircle, AiOutlineClockCircle } from "react-icons/ai";
+// import { MdCalendarToday } from "react-icons/md";
+
 import card1Img from "./images/card1.webp";
 import card2Img from "./images/card2.webp";
 import card3Img from "./images/card3.webp";
@@ -17,7 +22,7 @@ import video2Img from "./images/video2.webp";
 import video3Img from "./images/video3.webp";
 import video4Img from "./images/video4.webp";
 import secondstory from "./images/secondstory.webp";
- 
+
 const navItems = [{ name: "Today" }, { name: "Hourly" },{ name: "10 Day" },{ name: "Weekend" },{ name: "Monthly" },{ name: "Radar" },{ name: "Video","icon": <CgPlayButtonO />},{ name: "More Forcats","icon":<BiDownArrow />,reverse:true }];
 const cardDataItems = [{
      title:"When Will Monsoon Arrive Over Mumbai and Maharashtra This Year?",
@@ -128,5 +133,25 @@ const mobileTopStoryCardTwoDataItems = [{
  
 ]
 
-
+// const mobileFooterItems = [{
+//    title:"Today",
+//    image:<BsCalendarDate />
+// },
+// {
+//   title:"Hourly",
+//   image:<AiOutlineClockCircle />
+// },
+// {
+//   title:"10 Day",
+//   image:<MdCalendarToday />
+// },
+// {
+//    title:"Radar",
+//    image:<GiRadarSweep />
+// },
+// {
+//    title:"video",
+//    image:<AiFillPlayCircle />
+// },
+// ]
  export {navItems,cardDataItems,secondCardDataItems,thirdCardDataItems,videoCardDataItems,mobileTopStoryCardDataItems,mobileTopStoryCardTwoDataItems}

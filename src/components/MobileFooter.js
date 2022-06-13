@@ -1,11 +1,14 @@
 import React from "react";
 
+
 function MobileFooter() {
+    const current = new Date();
+    const date = `${current.getDate()}`
   return (
     <div>
-      <div className="bg-#fff flex items-center justify-between px-7 md:hidden">
+      <div className="flex  justify-between items-center bg-#fff px-7 md:hidden">
         <a
-          className="text-center py-1 text-[#2b2b2b] text-xs leading-tight"
+          className="py-1 text-center text-[#2b2b2b] leading-tight text-xs"
           href=""
         >
             <span className="w-[7vw]">
@@ -27,7 +30,7 @@ function MobileFooter() {
             ></path>
           </svg>
           </span>
-          {/* <span>12</span> */}
+          <span className="absolute top-[28%] left-[8%]">{date}</span>
           <span>Today</span>
         </a>
         <a

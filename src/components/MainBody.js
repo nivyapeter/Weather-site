@@ -7,7 +7,7 @@ import {
   thirdCardDataItems,
   videoCardDataItems,
   mobileTopStoryCardDataItems,
-  mobileTopStoryCardTwoDataItems
+  mobileTopStoryCardTwoDataItems,
 } from "../constants";
 import Button from "./Button";
 import storyImg from "../images/story.png";
@@ -15,7 +15,6 @@ import secondStoryImg from "../images/secondstory.webp";
 import Footer from "./Footer";
 import MobileCard from "./MobileCard";
 import VideoCard from "./VideoCard";
-import MobileFooter from "./MobileFooter";
 
 function MainBody() {
   return (
@@ -55,7 +54,12 @@ function MainBody() {
           </div>
 
           {/* mobile view */}
-          <MobileCard  text="Top Stories" mobileCardItems={mobileTopStoryCardDataItems} mobileCardTwoItems={mobileTopStoryCardTwoDataItems} className="mt-28 "/>
+          <MobileCard
+            text="Top Stories"
+            mobileCardItems={mobileTopStoryCardDataItems}
+            mobileCardTwoItems={mobileTopStoryCardTwoDataItems}
+            className="mt-28 "
+          />
         </div>
 
         {/* weather section */}
@@ -78,13 +82,16 @@ function MainBody() {
               </div>
               {/* <MobileCard /> */}
               <div className="hidden md:block">
-              <Button 
-                text="Sea more"
-                Link="https://weather.com/en-IN/india/news"
-              />
+                <Button
+                  text="Sea more"
+                  Link="https://weather.com/en-IN/india/news"
+                />
               </div>
             </div>
-            <MobileCard className="mt-1" mobileCardTwoItems={mobileTopStoryCardTwoDataItems}/>
+            <MobileCard
+              className="mt-1"
+              mobileCardTwoItems={mobileTopStoryCardTwoDataItems}
+            />
           </div>
           <div className="bg-white rounded-lg w-3/5  2xl:w-3/4  h-[15%]"></div>
         </div>
@@ -113,14 +120,17 @@ function MainBody() {
           <div className="bg-white rounded-lg w-3/5 2xl:w-3/4  h-[15%]"></div>
         </div>
         {/*trends mobile view */}
-        <MobileCard mobileCardTwoItems={mobileTopStoryCardTwoDataItems} text="Trending"/>
+        <MobileCard
+          mobileCardTwoItems={mobileTopStoryCardTwoDataItems}
+          text="Trending"
+        />
 
         {/* video container */}
-        <div className="flex-row w-5/6 m-auto py-2 gap-3 hidden md:flex 2xl:w-[69%]">
-          <div class="pt-3 max-w-2xl 2xl:max-w-4xl m-auto flex flex-col bg-white rounded-lg">
+        <div className="flex-row w-5/6  py-2 gap-3 hidden md:flex 2xl:w-[69%] m-auto">
+          <div class="bg-white pt-3 max-w-2xl 2xl:max-w-4xl flex flex-col rounded-lg m-auto">
             <div>
               <div class="p-3">
-                <h2 className="mb-5 text-black text-xl font-bold">Top Video</h2>
+                <h2 className="text-xl mb-5 text-black font-bold">Top Video</h2>
                 <SmallCardData
                   cardDataItems={videoCardDataItems}
                   className="flex flex-row  justify-between gap-5"
@@ -132,9 +142,9 @@ function MainBody() {
               />
             </div>
           </div>
-          <div className="bg-white rounded-lg w-3/5  h-[15%]"></div>
+          <div className="h-[15%] bg-white rounded-lg w-3/5  "></div>
         </div>
-        <VideoCard text="Top Video"/>
+        <VideoCard text="Top Video" />
         <div className="hidden md:block">
           <Footer />
         </div>

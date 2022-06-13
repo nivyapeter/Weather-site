@@ -5,7 +5,7 @@ function Button({text,Link}) {
     <div className="p-3">
       <a href={Link}>
     <button
-      className="inline-block  rounded-full px-6 py-2.5 bg-[#1B4DE4] text-white font-medium text-xs leading-tight  hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+      className="rounded-full px-6 py-2.5 text-white font-medium text-xs leading-normal  hover:shadow-xl focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bg-[#1B4DE4] "
     >
       {text} 
     </button>
