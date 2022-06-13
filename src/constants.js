@@ -133,25 +133,143 @@ const mobileTopStoryCardTwoDataItems = [{
  
 ]
 
-// const mobileFooterItems = [{
-//    title:"Today",
-//    image:<BsCalendarDate />
-// },
-// {
-//   title:"Hourly",
-//   image:<AiOutlineClockCircle />
-// },
-// {
-//   title:"10 Day",
-//   image:<MdCalendarToday />
-// },
-// {
-//    title:"Radar",
-//    image:<GiRadarSweep />
-// },
-// {
-//    title:"video",
-//    image:<AiFillPlayCircle />
-// },
-// ]
- export {navItems,cardDataItems,secondCardDataItems,thirdCardDataItems,videoCardDataItems,mobileTopStoryCardDataItems,mobileTopStoryCardTwoDataItems}
+const headerContents = [
+   {
+      title: "Forecast",
+      contents: [
+        {
+          text: "Today",
+          link: "",
+        },
+        {
+          text: "Hourly",
+          link: "",
+        },
+        {
+          text: "10-day",
+          link: "",
+        },
+        {
+          text: "Weekend",
+          link: "",
+        },
+        {
+         text: "Monthly",
+         link: "",
+       },
+      ],
+    },
+    {
+      title: "Maps",
+      contents: [
+        {
+          text: "Maps",
+          link: "",
+        },
+        
+      ],
+    },
+    {
+      title: "Weather News",
+      contents: [
+        {
+          text: "Forecasts and News",
+          link: "",
+        },
+        {
+          text: "Monsoon",
+          link: "",
+        },
+        {
+          text: "Videos",
+          link: "",
+        },
+      ],
+    },
+    {
+      title: "Health",
+      contents: [
+        {
+          text: "Allergy Tracker",
+          link: "",
+        },
+        {
+          text: "COVID-19 Dashboard",
+          link: "",
+        },
+        {
+          text: "COVID-19 News",
+          link: "",
+        },
+        {
+         text: "Air Quality Forecast",
+         link: "",
+       },
+       {
+         text: "Health News",
+         link: "",
+       },
+        
+      ],
+    },
+    {
+      title: "Science",
+      contents: [
+        {
+          text: "Science",
+          link: "",
+        },
+        {
+          text: "Space",
+          link: "",
+        },
+        
+      ],
+    },
+    {
+      title: "Environment",
+      contents: [
+        {
+          text: "Biodiversity",
+          link: "",
+        },
+        {
+          text: "Climate Change",
+          link: "",
+        },
+        {
+         text: "Pollution",
+         link: "",
+       },
+        
+      ],
+    },
+    {
+      title: "Activities",
+      contents: [
+        {
+          text: "Travel and Lifestyle",
+          link: "",
+        },
+        
+        
+      ],
+    },
+    {
+      title: "Privacy",
+      contents: [
+       {
+          text: "Data Rights",
+           link: "",
+        },
+        {
+         text: "Privacy Policy",
+          link: "",
+       },
+        
+        
+      ],
+    },
+    
+]
+ export {navItems,cardDataItems,secondCardDataItems,thirdCardDataItems,videoCardDataItems,mobileTopStoryCardDataItems,mobileTopStoryCardTwoDataItems,headerContents}

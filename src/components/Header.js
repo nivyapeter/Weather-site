@@ -1,11 +1,19 @@
 import React from "react";
+import { useState } from "react";
 import headerImageOne from "../images/header.png";
 import timesImg from "../images/times.png";
 import SearchBar from "./SearchBar";
 import { GiEarthAfricaEurope, GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 import { BiDownArrow } from "react-icons/bi";
+import NavBarWhiteBlock from "./NavBarWhiteBlock";
 
 function Header() {
+  const [state, setState] = useState(false);
+
+  const displayHamburge = () => {
+    setState(true);
+  };
   return (
     <>
       <div className="bg-[#005986]  w-full fixed md:static z-10">
@@ -43,10 +51,6 @@ function Header() {
             </div>
           </div>
           <SearchBar />
-          {/* <div id="parent" class="h-[300px] w-[300px] bg-red-700 flex justify-center items-center hover:bg-blue-100 pointer-events-none">
-  <div id="child" class="bg-red-200 h-[100px] w-[100px]  flex pointer-events-auto">
-  </div>
-</div> */}
           <div className="flex flex-row items-center justify-between">
             <GiEarthAfricaEurope className="w-[30px] h-[80px] text-white hidden md:block" />
             <div className="border-r-2 px-1 text-white text-[15px]  hidden md:block">
@@ -56,12 +60,19 @@ function Header() {
             <div>
               <BiDownArrow className="w-[20px] h-[50px] text-white  hidden md:block" />
             </div>
-            <div className="px-4">
-              <GiHamburgerMenu className="w-[30px] h-[80px] text-white" />
-            </div>
+            {state === false ? (
+              <div className="px-4" onClick={displayHamburge}>
+                <GiHamburgerMenu className="w-[30px] h-[80px] text-white" />
+              </div>
+            ) : (
+              <div className="px-4" onClick={()=>setState(false)}>
+                <AiOutlineCloseSquare className="w-[30px] h-[80px] text-white" />
+              </div>
+            )}
           </div>
         </div>
       </div>
+      {state === true ? <NavBarWhiteBlock /> : null}
       <div className="h-10 bg-[#337A9E] hidden md:block"></div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
 function SmallCardData({cardDataItems,className,title}) {
-  console.log(cardDataItems);
+  // console.log(cardDataItems);
   return (
     <div className={className}>
       {cardDataItems?.map((cardDataItem) => {
