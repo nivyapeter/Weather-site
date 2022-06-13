@@ -6,7 +6,7 @@ import Button from "./Button";
 function VideoCard({text}) {
   return (
     <div>
-      <div className="bg-white w-11/12 m-auto rounded-lg md:hidden block mt-4 px-4">
+      <div className="bg-white w-11/12 mb-20 m-auto rounded-lg md:hidden block mt-4 px-4">
         <h2 className="text-[#2b2b2b] text-xl font-bold p-2">{text}</h2>
           <div>
             <div className="relative">
