@@ -4,7 +4,7 @@ import headerImageOne from "../images/header.png";
 import timesImg from "../images/times.png";
 import SearchBar from "./SearchBar";
 import { GiEarthAfricaEurope, GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineCloseSquare } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import { BiDownArrow } from "react-icons/bi";
 import NavBarWhiteBlock from "./NavBarWhiteBlock";
 
@@ -17,10 +17,10 @@ function Header() {
   return (
     <>
       <div className="bg-[#005986]  w-full fixed md:static z-10">
-        <div className=" px-3 py-2 m-auto 2xl:w-9/12 w-[89%] xl:w-[98%] h-20 flex items-center flex-row justify-between">
+        <div className=" px-3 py-2 m-auto 2xl:w-9/12 w-[104%] md:w-[89%] xl:w-[98%] h-20 flex items-center flex-row justify-between">
           <div className="flex items-center flex-row cursor-pointer">
-            <a to="">
-              <div className="w-[60px]">
+            <a className="w-[23px]" to="">
+              <div className="md:w-[60px] w-[42px]">
                 <svg
                   class="Icon--icon--3wCKh Icon--lightTheme--3NMAI MainMenuHeader--twcLogo--1oRKo"
                   data-testid="Icon"
@@ -66,9 +66,13 @@ function Header() {
               </div>
             ) : (
               <div className="px-4 cursor-pointer" onClick={()=>setState(false)}>
-                <AiOutlineCloseSquare className="w-[30px] h-[80px] text-white" />
+                <AiOutlineClose className="w-[30px] h-[80px] text-white md:border-2  md:border-white h-[31px]" />
               </div>
             )}
+
+            {/* mobile */}
+
+            
           </div>
         </div>
       </div>
