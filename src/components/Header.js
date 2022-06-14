@@ -23,7 +23,7 @@ function Header() {
   return (
     <>
       <div className="bg-[#005986]  w-full fixed md:static z-10">
-        <div className=" px-3 py-2 m-auto 2xl:w-9/12 w-[104%] md:w-[89%] xl:w-[98%] h-20 flex items-center flex-row justify-between">
+        <div className=" px-3 py-2 m-auto 2xl:w-9/12 w-[104%] md:w-[94%] lg:w-[89%] xl:w-[98%] h-20 flex items-center flex-row justify-between">
           <div className="flex items-center flex-row cursor-pointer">
             <a className="w-[23px]" to="">
               <div className="md:w-[60px] w-[42px]">
@@ -43,21 +43,27 @@ function Header() {
                 </svg>
               </div>
             </a>
-            <div className="px-4">
+           <div className="lg:px-16 md:pl-12 md:pr-4">
               <img
-                className="w-[140px] h-[23px] hidden md:block"
+                className="w-[140px] h-[23px] md:block hidden"
                 src={headerImageOne}
               ></img>
             </div>
-            <div className="md:border-l-2 md:px-4 pr-4">
+            {state===true?<div className="px-8">
+              <img
+                className="w-[140px] h-[23px] block"
+                src={headerImageOne}
+              ></img>
+            </div>:null}
+            {state === false? <div className="md:border-l-2 md:px-4 pr-4 pl-8">
               <img
                 className="md:w-[140px] w-[354px] md:h-[23px]"
                 src={timesImg}
               ></img>
-            </div>
+            </div> :null}
           </div>
-          <SearchBar />
-          <div className="flex flex-row items-center justify-between">
+          {state === false? <SearchBar />:null}
+          <div className="flex flex-row items-center justify-between md:pl-4 lg:pl-0">
             <GiEarthAfricaEurope className="w-[30px] h-[80px] text-white hidden md:block" />
             <div className="border-r-2 px-1 text-white text-[15px]  hidden md:block">
               <span className="px-4">IN</span>
@@ -79,7 +85,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {state === true?<MobileMenu /> :null}
+      {state === true?<MobileMenu headerImageOne={headerImageOne} state={state} setState={setState} onClick={displayHamburge}  /> :null}
       {state === true ? <NavBarWhiteBlock /> : null}
       <div className="h-10 bg-[#337A9E] hidden md:block"></div>
     </>

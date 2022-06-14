@@ -21,8 +21,8 @@ function MainBody() {
     <div className="bg-gradient-to-r from-[#003550] to-blue-200  mx-auto w-4/   ">
       <div class="flex flex-col">
         <div>
-          <div className="md:flex-row md:w-5/6 2xl:w-[69%] m-auto py-2 gap-3 w-[93%] hidden md:flex">
-            <div class="pt-3 max-w-2xl 2xl:max-w-4xl m-auto flex flex-row bg-white rounded-lg mt-20 md:mt-0">
+          <div className="md:flex-row xl:w-5/6 2xl:w-[69%] m-auto py-2 gap-3 lg:w-[93%] md:w-[87.3333%] hidden md:flex">
+            <div class="pt-3 md:max-w-[28rem] lg:max-w-2xl 2xl:max-w-4xl m-auto flex md:flex-col lg:flex-row bg-white rounded-lg mt-20 md:mt-0">
               <div className="hidden md:block">
                 <CardMainData
                   title="Top Stories"
@@ -33,14 +33,22 @@ function MainBody() {
           issued a yellow watch over the region."
                   sideText="Read More"
                 />
+                <div className="md:hidden lg:block">
                 <Button
                   text="Sea more"
                   Link="https://weather.com/en-IN/india/news"
                 />
+                </div>
               </div>
-              <div class="shadow-lg  p-3 mt-6 max-w-[22%] hidden md:block">
+              <div class="shadow-lg  p-3 mt-6 lg:max-w-[22%] md:max-w-[48%] hidden md:block">
                 <SmallCardData cardDataItems={cardDataItems} />
               </div>
+              <div className="lg:hidden">
+              <Button
+                  text="Sea more"
+                  Link="https://weather.com/en-IN/india/news"
+                />
+                </div>
             </div>
             {/* side data card */}
             <div className="bg-white rounded-lg w-3/5  h-[15%] hidden md:block">
@@ -63,8 +71,8 @@ function MainBody() {
         </div>
 
         {/* weather section */}
-        <div className="block md:flex flex-row md:w-5/6 w-11/12  2xl:w-[69%] m-auto py-2 gap-3">
-          <div class="pt-3 max-w-2xl 2xl:max-w-4xl m-auto flex flex-col bg-white rounded-lg">
+        <div className="block md:flex flex-row lg:w-[92.33%] xl:w-5/6 w-11/12 md:w-[87.33%] 2xl:w-[69%] m-auto py-2 gap-3">
+          <div class="pt-3 md:max-w-[28rem] lg:max-w-2xl 2xl:max-w-4xl m-auto flex flex-col bg-white rounded-lg">
             <div>
               <CardMainData
                 title="Weather Across India"
@@ -77,7 +85,7 @@ function MainBody() {
               <div class="p-3 mt-6 hidden md:block">
                 <SmallCardData
                   cardDataItems={secondCardDataItems}
-                  className="flex flex-row  justify-between gap-7"
+                  className="lg:flex lg:flex-row md:grid md:grid-cols-2  justify-between gap-7"
                 />
               </div>
               {/* <MobileCard /> */}
@@ -97,8 +105,8 @@ function MainBody() {
         </div>
 
         {/* don't miss container */}
-        <div className="flex-row w-5/6 m-auto py-2 gap-3 hidden md:flex 2xl:w-[69%]">
-          <div class="pt-3 max-w-2xl 2xl:max-w-4xl m-auto flex flex-col bg-white rounded-lg">
+        <div className="flex-row md:w-[87.33%] lg:w-[92.33%] xl:w-5/6 m-auto py-2 gap-3 hidden md:flex 2xl:w-[69%]">
+          <div class="pt-3 md:max-w-[28rem] lg:max-w-2xl 2xl:max-w-4xl m-auto flex flex-col bg-white rounded-lg">
             <div>
               <div class="p-3">
                 <h2 className="mb-5 text-black text-xl font-bold">
@@ -107,7 +115,7 @@ function MainBody() {
                 <div>
                   <SmallCardData
                     cardDataItems={thirdCardDataItems}
-                    className="flex flex-row  justify-between gap-5"
+                    className="lg:flex lg:flex-row  md:grid md:grid-cols-2  justify-between gap-5"
                   />
                 </div>
               </div>
@@ -126,14 +134,14 @@ function MainBody() {
         />
 
         {/* video container */}
-        <div className="flex-row w-5/6  py-2 gap-3 hidden md:flex 2xl:w-[69%] m-auto">
-          <div class="bg-white pt-3 max-w-2xl 2xl:max-w-4xl flex flex-col rounded-lg m-auto">
+        <div className="flex-row md:w-[87.33%] lg:w-[92.33%] xl:w-5/6  py-2 gap-3 hidden md:flex 2xl:w-[69%] m-auto">
+          <div class="bg-white pt-3 md:max-w-[28rem] lg:max-w-2xl 2xl:max-w-4xl flex flex-col rounded-lg m-auto">
             <div>
               <div class="p-3">
                 <h2 className="text-xl mb-5 text-black font-bold">Top Video</h2>
                 <SmallCardData
                   cardDataItems={videoCardDataItems}
-                  className="flex flex-row  justify-between gap-5"
+                  className="lg:flex lg:flex-row  md:grid md:grid-cols-2 justify-between gap-5"
                 />
               </div>
               <Button
